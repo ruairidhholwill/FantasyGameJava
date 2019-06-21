@@ -40,4 +40,14 @@ public class BarbarianTest {
         assertEquals(30, barbarian.getWeaponValue());
     }
 
+    @Test
+    public void canGetPower(){
+        assertEquals(20, barbarian.getPower());
+    }
+
+    @Test
+    public void canGetShield(){
+        assertEquals(30, barbarian.getShield());
+    }
+
 }
