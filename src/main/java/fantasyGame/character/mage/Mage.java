@@ -16,4 +16,19 @@ public abstract class Mage extends Character {
     }
 
 
+    public SpellType getSpellType() {
+        return spellType;
+    }
+
+    public void setSpellType(SpellType spellType) {
+        this.spellType = spellType;
+    }
+
+    public CreatureType getCreatureType() {
+        return creatureType;
+    }
+
+    public void setCreatureType(CreatureType creatureType) {
+        this.creatureType = creatureType;
+    }
 }
