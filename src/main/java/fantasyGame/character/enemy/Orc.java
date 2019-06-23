@@ -1,4 +1,9 @@
 package fantasyGame.character.enemy;
 
-public class Orc {
+import fantasyGame.Enums.WeaponType;
+
+public class Orc extends Enemy {
+    public Orc(String name, int health, WeaponType weaponType) {
+        super(name, health, weaponType);
+    }
 }
