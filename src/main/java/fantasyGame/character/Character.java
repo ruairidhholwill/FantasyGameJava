@@ -25,4 +25,8 @@ public abstract class Character {
     public int reduceHealth(int damage) {
         return this.health -= damage;
     }
+
+    public int increaseHealth(int health) {
+        return this.health += health;
+    }
 }

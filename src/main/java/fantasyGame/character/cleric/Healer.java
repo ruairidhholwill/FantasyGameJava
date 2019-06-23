@@ -1,9 +1,11 @@
 package fantasyGame.character.cleric;
 
 import fantasyGame.Enums.HealType;
+import fantasyGame.behaviours.IHeal;
 import fantasyGame.character.Character;
+import fantasyGame.character.fighter.Fighter;
 
-public class Healer extends Character {
+public class Healer extends Character implements IHeal {
 
     private HealType healType;
 
@@ -18,5 +20,10 @@ public class Healer extends Character {
 
     public void setHealType(HealType healType) {
         this.healType = healType;
+    }
+
+    public void heal(Fighter fighter){
+        int health = healType.getValue();
+        fighter.increaseHealth(health);
     }
 }
