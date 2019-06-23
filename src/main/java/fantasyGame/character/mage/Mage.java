@@ -3,10 +3,11 @@ package fantasyGame.character.mage;
 import fantasyGame.Enums.CreatureType;
 import fantasyGame.Enums.SpellType;
 import fantasyGame.behaviours.ICast;
+import fantasyGame.behaviours.IDefend;
 import fantasyGame.character.Character;
 import fantasyGame.character.enemy.Enemy;
 
-public abstract class Mage extends Character implements ICast {
+public abstract class Mage extends Character implements ICast, IDefend {
 
     private SpellType spellType;
     private CreatureType creatureType;
@@ -36,6 +37,11 @@ public abstract class Mage extends Character implements ICast {
 
     public void cast(Enemy enemy){
         int damage = spellType.getValue();
+        enemy.reduceHealth(damage);
+    }
+
+    public void defend(Enemy enemy){
+        int damage = creatureType.getValue();
         enemy.reduceHealth(damage);
     }
 }
