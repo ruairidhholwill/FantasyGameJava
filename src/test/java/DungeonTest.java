@@ -54,12 +54,12 @@ public class DungeonTest {
 
     @Test
     public void enemiesStartEmpty(){
-        assertEquals(0, dungeon.getEnemies().size());
+        assertEquals(0, enemies.size());
     }
 
     @Test
     public void fightersStartEmpty(){
-        assertEquals(0, dungeon.getFighters().size());
+        assertEquals(0, fighters.size());
     }
 
     @Test
