@@ -1,8 +1,11 @@
+import fantasyGame.Enums.CreatureType;
 import fantasyGame.Enums.HealType;
+import fantasyGame.Enums.SpellType;
 import fantasyGame.Enums.WeaponType;
 import fantasyGame.character.cleric.Healer;
 import fantasyGame.character.fighter.Fighter;
 import fantasyGame.character.fighter.Knight;
+import fantasyGame.character.mage.Wizard;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -44,5 +47,12 @@ public class HealerTest {
     public void canHealFighter(){
         healer.heal(fighter);
         assertEquals(90, fighter.getHealth());
+    }
+
+    @Test
+    public void canNotHealOver100(){
+        healer.heal(fighter);
+        healer.heal(fighter);
+        assertEquals(100, fighter.getHealth());
     }
 }

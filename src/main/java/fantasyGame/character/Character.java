@@ -15,6 +15,9 @@ public abstract class Character {
     }
 
     public int getHealth() {
+        if (health > 100){
+            health = 100;
+        }
         return health;
     }
 
