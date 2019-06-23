@@ -1,5 +1,8 @@
 import fantasyGame.Enums.CreatureType;
 import fantasyGame.Enums.SpellType;
+import fantasyGame.Enums.WeaponType;
+import fantasyGame.character.enemy.Enemy;
+import fantasyGame.character.enemy.Ogre;
 import fantasyGame.character.mage.Warlock;
 import org.junit.Before;
 import org.junit.Test;
@@ -10,10 +13,12 @@ import static junit.framework.TestCase.assertEquals;
 public class WarlockTest {
 
     Warlock warlock;
+    Enemy enemy;
 
     @Before
     public void before(){
         warlock = new Warlock("Ben", 100, SpellType.FROSTBOLT, CreatureType.LEMUR, 20, 15);
+        enemy = new Ogre("Ogre", 100, WeaponType.CLUB);
     }
 
     @Test
@@ -56,5 +61,11 @@ public class WarlockTest {
     @Test
     public void canGetShield(){
         assertEquals(15, warlock.getShield());
+    }
+
+    @Test
+    public void canCastSpellWithExtraPower(){
+        warlock.cast(enemy);
+        assertEquals(60, enemy.getHealth());
     }
 }

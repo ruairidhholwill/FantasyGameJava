@@ -2,6 +2,7 @@ package fantasyGame.character.mage;
 
 import fantasyGame.Enums.CreatureType;
 import fantasyGame.Enums.SpellType;
+import fantasyGame.character.enemy.Enemy;
 
 public class Warlock extends Mage {
 
@@ -20,5 +21,10 @@ public class Warlock extends Mage {
 
     public int getShield() {
         return shield;
+    }
+
+    public void cast(Enemy enemy){
+        int damage = this.getSpellType().getValue() + this.power;
+        enemy.reduceHealth(damage);
     }
 }
