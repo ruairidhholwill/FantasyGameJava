@@ -1,9 +1,11 @@
 package fantasyGame.character.fighter;
 
 import fantasyGame.Enums.WeaponType;
+import fantasyGame.behaviours.IAttackEnemy;
 import fantasyGame.character.Character;
+import fantasyGame.character.enemy.Enemy;
 
-public abstract class Fighter extends Character {
+public abstract class Fighter extends Character implements IAttackEnemy {
 
     WeaponType weaponType;
 
@@ -23,4 +25,12 @@ public abstract class Fighter extends Character {
     public int getWeaponValue(){
         return weaponType.getValue();
     }
+
+    public void attack(Enemy enemy){
+        int damage = weaponType.getValue();
+        enemy.reduceHealth(damage);
+    }
+
+
+
 }

@@ -1,6 +1,7 @@
 package fantasyGame.character.fighter;
 
 import fantasyGame.Enums.WeaponType;
+import fantasyGame.character.enemy.Enemy;
 
 public class Dwarf extends Fighter {
 
@@ -13,5 +14,10 @@ public class Dwarf extends Fighter {
 
     public int getPower() {
         return power;
+    }
+
+    public void attack(Enemy enemy){
+        int damage = weaponType.getValue() + this.getPower();
+        enemy.reduceHealth(damage);
     }
 }

@@ -1,8 +1,10 @@
 package fantasyGame.character.fighter;
 
 import fantasyGame.Enums.WeaponType;
+import fantasyGame.behaviours.IAttackEnemy;
+import fantasyGame.character.enemy.Enemy;
 
-public class Barbarian extends Fighter {
+public class Barbarian extends Fighter implements IAttackEnemy {
 
     private int power;
     private int shield;
@@ -20,4 +22,15 @@ public class Barbarian extends Fighter {
     public int getShield() {
         return shield;
     }
+
+    public void attack(Enemy enemy){
+        int damage = weaponType.getValue() + this.getPower();
+        enemy.reduceHealth(damage);
+    }
+
+    public int reduceHealth(int damage){
+        return this.health -= (damage - this.getShield());
+    }
+
+
 }

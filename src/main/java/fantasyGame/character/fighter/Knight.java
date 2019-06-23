@@ -14,4 +14,8 @@ public class Knight extends Fighter {
     public int getShield() {
         return shield;
     }
+
+    public int reduceHealth(int damage){
+        return this.health -= (damage - this.getShield());
+    }
 }

@@ -1,4 +1,6 @@
 import fantasyGame.Enums.WeaponType;
+import fantasyGame.character.enemy.Enemy;
+import fantasyGame.character.enemy.Orc;
 import fantasyGame.character.fighter.Dwarf;
 import org.junit.Before;
 import org.junit.Test;
@@ -8,10 +10,12 @@ import static junit.framework.TestCase.assertEquals;
 public class DwarfTest {
 
     Dwarf dwarf;
+    Enemy enemy;
 
     @Before
     public void before(){
         dwarf = new Dwarf("Dopey", 100, WeaponType.CLUB, 40);
+        enemy = new Orc("Orc", 100, WeaponType.AXE);
     }
 
     @Test
@@ -45,5 +49,10 @@ public class DwarfTest {
         assertEquals(40, dwarf.getPower());
     }
 
+    @Test
+    public void canAttackWithExtraPower(){
+        dwarf.attack(enemy);
+        assertEquals(30, enemy.getHealth());
+    }
 
 }

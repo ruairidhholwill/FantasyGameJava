@@ -28,4 +28,10 @@ public class OrcTest {
     public void canGetWeaponType(){
         assertEquals(WeaponType.CLUB, orc.getWeaponType());
     }
+
+    @Test
+    public void canTakeDamage(){
+        orc.reduceHealth(40);
+        assertEquals(60, orc.getHealth());
+    }
 }

@@ -3,7 +3,7 @@ package fantasyGame.character;
 public abstract class Character {
 
    private String name;
-   private int health;
+   protected int health;
 
     public Character(String name, int health){
         this.name = name;
@@ -20,5 +20,9 @@ public abstract class Character {
 
     public void setHealth(int health) {
         this.health = health;
+    }
+
+    public int reduceHealth(int damage) {
+        return this.health -= damage;
     }
 }
