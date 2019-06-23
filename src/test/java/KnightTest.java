@@ -63,4 +63,20 @@ public class KnightTest {
         enemy.attack(knight2);
         assertEquals(90, knight2.getHealth());
     }
+
+    @Test
+    public void healthCanNotBeLessThan0(){
+        enemy.attack(knight2);
+        enemy.attack(knight2);
+        enemy.attack(knight2);
+        enemy.attack(knight2);
+        enemy.attack(knight2);
+        enemy.attack(knight2);
+        enemy.attack(knight2);
+        enemy.attack(knight2);
+        enemy.attack(knight2);
+        enemy.attack(knight2);
+        enemy.attack(knight2);
+        assertEquals(0, knight2.getHealth());
+    }
 }

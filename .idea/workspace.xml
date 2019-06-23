@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="54443796-0161-4e27-825c-24eb2dc03215" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/fantasyGame/character/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fantasyGame/character/Character.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HealerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HealerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/KnightTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/KnightTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -82,22 +82,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fantasyGame/character/Character.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+            <state relative-caret-position="285">
+              <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
               <folding>
-                <element signature="e#481#482#0" expanded="true" />
-                <element signature="e#568#569#0" expanded="true" />
-                <element signature="e#657#658#0" expanded="true" />
+                <element signature="e#537#538#0" expanded="true" />
+                <element signature="e#624#625#0" expanded="true" />
+                <element signature="e#713#714#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/KnightTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+            <state relative-caret-position="535">
+              <caret line="79" column="22" selection-start-line="79" selection-start-column="22" selection-end-line="79" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -121,10 +121,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/HealerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
+            <state relative-caret-position="472">
               <caret line="55" column="47" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -177,7 +177,6 @@
         <option value="$PROJECT_DIR$/src/main/java/fantasyGame/character/fighter/Barbarian.java" />
         <option value="$PROJECT_DIR$/src/main/java/fantasyGame/character/fighter/Knight.java" />
         <option value="$PROJECT_DIR$/src/test/java/OgreTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/KnightTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/BarbarianTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/fantasyGame/behaviours/ICast.java" />
         <option value="$PROJECT_DIR$/src/main/java/fantasyGame/character/mage/Warlock.java" />
@@ -189,8 +188,9 @@
         <option value="$PROJECT_DIR$/src/test/java/WizardTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/fantasyGame/behaviours/IHeal.java" />
         <option value="$PROJECT_DIR$/src/main/java/fantasyGame/character/cleric/Healer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fantasyGame/character/Character.java" />
         <option value="$PROJECT_DIR$/src/test/java/HealerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fantasyGame/character/Character.java" />
+        <option value="$PROJECT_DIR$/src/test/java/KnightTest.java" />
       </list>
     </option>
   </component>
@@ -323,7 +323,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HealerTest.canNotHealOver100">
+  <component name="RunManager" selected="JUnit.KnightTest.healthCanNotBeLessThan0">
     <configuration name="HealerTest.canHealFighter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Fantasy_Game" />
       <option name="PACKAGE_NAME" value="" />
@@ -354,11 +354,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WitchTest.canAttackEnemy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="KnightTest.healthCanNotBeLessThan0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Fantasy_Game" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="WitchTest" />
-      <option name="METHOD_NAME" value="canAttackEnemy" />
+      <option name="MAIN_CLASS_NAME" value="KnightTest" />
+      <option name="METHOD_NAME" value="healthCanNotBeLessThan0" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -376,11 +376,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.KnightTest.healthCanNotBeLessThan0" />
         <item itemvalue="JUnit.HealerTest.canNotHealOver100" />
         <item itemvalue="JUnit.HealerTest.canHealFighter" />
         <item itemvalue="JUnit.HealerTest.canIncreaseHealth" />
         <item itemvalue="JUnit.WizardTest.creatureCanDefend" />
-        <item itemvalue="JUnit.WitchTest.canAttackEnemy" />
       </list>
     </recent_temporary>
   </component>
@@ -398,9 +398,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="KnightTest_canAttackEnemy - 2019.06.23 at 13h 55m 32s.xml">
-      <configuration name="KnightTest.canAttackEnemy" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_Fantasy_Game - 2019.06.23 at 14h 16m 16s.xml">
       <configuration name="All in Fantasy_Game" configurationId="JUnit" />
     </history-entry>
@@ -427,6 +424,9 @@
     </history-entry>
     <history-entry file="HealerTest_canHealFighter - 2019.06.23 at 15h 06m 16s.xml">
       <configuration name="HealerTest.canHealFighter" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HealerTest_canNotHealOver100 - 2019.06.23 at 15h 16m 51s.xml">
+      <configuration name="HealerTest.canNotHealOver100" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -770,32 +770,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fantasyGame/character/Character.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/HealerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-          <folding>
-            <element signature="e#481#482#0" expanded="true" />
-            <element signature="e#568#569#0" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/KnightTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+        <state relative-caret-position="472">
+          <caret line="55" column="47" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/HealerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fantasyGame/character/Character.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="55" column="47" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
+        <state relative-caret-position="285">
+          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <folding>
+            <element signature="e#537#538#0" expanded="true" />
+            <element signature="e#624#625#0" expanded="true" />
+            <element signature="e#713#714#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/KnightTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="79" column="22" selection-start-line="79" selection-start-column="22" selection-end-line="79" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
