@@ -75,6 +75,26 @@ public class DungeonTest {
         assertEquals(2, fighters.size());
     }
 
-    
+    @Test
+    public void fighterCanReduceEnemyHealth(){
+        knight.attack(orc);
+        assertEquals(75, orc.getHealth());
+    }
+
+    @Test
+    public void enemyRemovedIfDefeated(){
+        fighters.add(knight);
+        enemies.add(ogre);
+        enemies.add(orc);
+        knight.attack(orc);
+        knight.attack(orc);
+        knight.attack(orc);
+        knight.attack(orc);
+        dungeon.checkEnemyHealth();
+        assertEquals(1, enemies.size());
+    }
+
+
+
 
 }

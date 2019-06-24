@@ -50,4 +50,14 @@ public abstract class Room {
     public void setHealer(Healer healer) {
         this.healer = healer;
     }
+
+    public ArrayList<Enemy> checkEnemyHealth(){
+        for (Enemy enemy : enemies)
+        {
+            if (enemy.getHealth() <= 0) {
+                enemies.remove(enemy);
+            }
+        }
+        return enemies;
+    }
 }
